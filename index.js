@@ -5,7 +5,6 @@ const userRoute = require('./routes/auth.route');
 const taskRoute = require('./routes/task.route');
 const mongoose = require('mongoose');
 const fireBaseAdmin = require('firebase-admin')
-const serviceKey = require('./serviceKey.json');
 const globalErrors = require('./middlewares/globalError.middleware');
 dotenv.config()
 

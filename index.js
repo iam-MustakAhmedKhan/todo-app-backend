@@ -20,6 +20,7 @@ fireBaseAdmin.initializeApp({
         projectId: process.env.PROJECT_ID,
         clientEmail: process.env.CLIENT_EMAIL,
     }),
+    projectId: process.env.PROJECT_ID,
 });
 
 

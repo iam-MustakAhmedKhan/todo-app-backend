@@ -19,7 +19,7 @@ fireBaseAdmin.initializeApp({
     credential: fireBaseAdmin.credential.cert({
         privateKey: process.env.FIREBASE_PRIVATE_KEY,
         projectId: process.env.PROJECT_ID,
-        clientEmail: process.envCLIENT_EMAIL,
+        clientEmail: process.env.CLIENT_EMAIL,
     }),
 });
 

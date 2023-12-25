@@ -16,7 +16,11 @@ app.use(cors());
 app.use(express.json(), express.urlencoded({ extended: true }));
 
 fireBaseAdmin.initializeApp({
-    credential: fireBaseAdmin.credential.cert(serviceKey),
+    credential: fireBaseAdmin.credential.cert({
+        privateKey: process.env.FIREBASE_PRIVATE_KEY,
+        projectId: process.env.PROJECT_ID,
+        clientEmail: process.envCLIENT_EMAIL,
+    }),
 });
 
 
